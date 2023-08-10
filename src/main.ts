@@ -1,4 +1,5 @@
 import './assets/main.css'
+import './assets/styles/globalMixins.scss' // 引入全局样式
 
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
