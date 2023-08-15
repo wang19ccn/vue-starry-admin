@@ -1,4 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+.dark-mode-variables {
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-variant: #a3bdcc;
+    --color-light: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+    margin: 0px;
+    padding: 0;
+    outline: 0;
+    /* CSS 的 outline 属性是在一条声明中设置多个轮廓属性的简写属性  */
+    appearance: none;
+    /* appearance CSS 属性用于控制 UI 控件的基于操作系统主题的原生外观。 */
+    /* 但 0 是非法值，在以前非标准化和老浏览器上是允许0，现在应该是none，否则会警告无效值 */
+    border: 0;
+    text-decoration: none;
+    /* text-decoration 简写 CSS 属性设置文本上的装饰性线条的外观 */
+    box-sizing: border-box;
+    /* box-sizing */
+    /* CSS 中的 box-sizing 属性定义了 user agent 应该如何计算一个元素的总宽度和总高度。 */
+    /* https://developer.mozilla.org/zh-CN/docs/Web/CSS/box-sizing */
+}
+
+html {
+    font-size: 14px;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.88rem;
+    user-select: none;
+    /* user-select CSS 属性用于控制用户是否可以选择文本 */
+    overflow-x: hidden;
+    color: var(--color-dark);
+    background-color: var(--color-background);
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    /* object-fit CSS 属性指定可替换元素（例如：<img> 或 <video>）的内容应该如何适应到其使用高度和宽度确定的框。 */
+    /* https://developer.mozilla.org/zh-CN/docs/Web/CSS/object-fit */
+}
+
 h1 {
-    font-size: 50px;
-    color: $color;
+    font-weight: 800;
+    font-size: 1.8rem;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-weight: 500;
+    font-size: 0.87rem;
+}
+
+small {
+    font-size: 0.76rem;
+}
+
+p {
+    color: var(--color-dark-variant);
+}
+
+b {
+    color: var(--color-dark);
+}
+
+.text-muted {
+    color: var(--color-info-dark);
+}
+
+.primary {
+    color: var(--color-primary);
+}
+
+.danger {
+    color: var(--color-danger);
+}
+
+.success {
+    color: var(--color-success);
+}
+
+.warning {
+    color: var(--color-warning);
 }
