@@ -1,4 +1,4 @@
-import request from './config/base'
+import { request } from './config/base'
 
 export function getTestArr(query: any) {
     return request({

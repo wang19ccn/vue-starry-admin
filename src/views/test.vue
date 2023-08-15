@@ -5,7 +5,7 @@
     <p>这是请求到的数据{{ testData.list }}</p>
   </div>
 </template>
-<script>
+<script lang="ts">
 import { reactive, inject } from 'vue'
 // import API from "../api/config/base"
 import { getTestArr } from '../api/test'
@@ -28,9 +28,9 @@ export default {
       //     alert('请求成功!');
       //     testData.list = res.data.dataList;
       // });
-      getTestArr().then((res) => {
+      getTestArr('').then((res) => {
         alert('请求成功!')
-        testData.list = res.data.dataList
+        testData.list = res.data.result
       })
     }
     return {
