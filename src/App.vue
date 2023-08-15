@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
 import Test from './views/test.vue'
+import BarChart from './views/BarChart.vue'
 </script>
 
 <template>
@@ -20,7 +21,7 @@ import Test from './views/test.vue'
   </header>
 
   <Test></Test>
-
+  <BarChart></BarChart>
   <RouterView />
 </template>
 
